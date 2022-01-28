@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;  /* detalhes: pesquise sobre scroll-snap */
+}
+
+.container .section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;   /* detalhes: pesquise sobre scroll-snap */
+    background-blend-mode: multiply;
+}
+
+.container .section:nth-child(1) {
+    background: rgb(117, 178, 235) url('bg1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(2) {
+    background: rgb(235, 212, 169) url('bg2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(3) {
+    background: rgb(228, 170, 116) url('bg3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(4) {
+    background: rgb(235, 81, 81) url('bg4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(5) {
+    background: rgb(180, 236, 48) url('bg5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .section .content {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    max-width: 700px;
+}
+
+.container .section .content h2 {
+    background: #fff;
+    color: #111;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.container .section .content p {
+    background: #fff;
+    color: #111;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-weight: 300;
+}
