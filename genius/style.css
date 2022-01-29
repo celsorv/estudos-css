@@ -1,0 +1,63 @@
+/*
+    Grid Layout
+    Veja o arquivo entenda-grid.html também aqui disponível
+*/
+
+body {
+    margin: 0;
+    background-color: rgb(208, 255, 239);
+}
+
+.main-game {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius {
+
+    /* torna o elemento um grid container */
+    display: grid;
+    
+    grid-template-areas: 
+        'verde vermelho'
+        'amarelo azul';
+
+    grid-gap: 10px;
+
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+}
+
+.blue {
+    grid-area: azul;
+    background-color: rgb(4, 4, 165);
+    border-bottom-right-radius: 100%;
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: rgb(187, 5, 5);
+    border-top-right-radius: 100%;
+}
+
+.yellow {
+    grid-area: amarelo;
+    background-color: rgb(197, 146, 5);
+    border-bottom-left-radius: 100%;
+}
+
+.green {
+    grid-area: verde;
+    background-color: rgb(1, 88, 1);
+    border-top-left-radius: 100%;
+}
+
+.selected {
+    opacity: 0.8;
+}
